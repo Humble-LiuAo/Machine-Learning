@@ -1,2 +1,2 @@
-# Deep-learning
+# Machine-Learning
 
