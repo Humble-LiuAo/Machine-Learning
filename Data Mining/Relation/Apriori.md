@@ -17,7 +17,7 @@
 
   仍然以购买商品为例，对于有$N$件商品的超市，顾客所有可能的数据组合共
 
-<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191747173.png" alt="image-20220419174723126" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191747173.png" alt="image-20220419174723126" style="zoom:80%;" />
 
 种组合，如果要遍历需要很长时间。
 
@@ -135,25 +135,25 @@ Fre_list,support_dict
 
   对于一个 $N$ 项频繁项集，可能的频繁项集组合共：
 
-<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191749692.png" alt="image-20220419174926652" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191749692.png" alt="image-20220419174926652" style="zoom:80%;" />
 
 种关联组合。
 
 同样的依据Apriori原理，对于一个频繁项集$A=(X_1,X_2,\cdots，X_N)$,关系$B\longrightarrow C$,其中$B=(X_1,X_2,\cdots，X_k)$,$C=(X_{k+1},X_{k+2},\cdots，X_N)$,并未构成关联规则，即
 
-<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191753573.png" alt="image-20220419175322535" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191753573.png" alt="image-20220419175322535" style="zoom:80%;" />
 
 那么，关系$D\longrightarrow E$也不构成关联规则，其中$B\subset D$,$C\subset E$,因为
 
-<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191753542.png" alt="image-20220419175354509" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191753542.png" alt="image-20220419175354509" style="zoom:80%;" />
 
 且
 
-<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191754130.png" alt="image-20220419175408094" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191754130.png" alt="image-20220419175408094" style="zoom:80%;" />
 
 故
 
-<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191754911.png" alt="image-20220419175419877" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191754911.png" alt="image-20220419175419877" style="zoom:80%;" />
 
   对于一个N项繁项集，我们可以按照以下流程**挖掘关联规则**：
 1）获得N项频繁集的$(N-1)\longrightarrow 1$项关系，删除不达到阈值的关系，获得关联规则。

@@ -61,43 +61,43 @@
 
    - 添加事务{I2,I1,I5}
 
-   [![image-20220330174538557](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191733858.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174538557.png)
+   [![image-20220330174538557](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191733858.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174538557.png)
 
    - 添加事务{I2,I4}
 
-   [![image-20220330174551771](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191733364.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174551771.png)
+   [![image-20220330174551771](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191733364.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174551771.png)
 
    - 添加事务{I2,I3}
 
-   [![image-20220330184014192](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191733782.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184014192.png)
+   [![image-20220330184014192](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191733782.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184014192.png)
 
    - 添加事务{I2,I1,I4}
 
-   [![image-20220330174749998](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191733578.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174749998.png)
+   [![image-20220330174749998](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191733578.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174749998.png)
 
    - 添加事务{I1,I3}
 
-   [![image-20220330174835097](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191733820.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174835097.png)
+   [![image-20220330174835097](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191733820.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174835097.png)
 
    - 添加事务{I2,I3}
 
-   [![image-20220330174912407](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191733182.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174912407.png)
+   [![image-20220330174912407](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191733182.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174912407.png)
 
    - 添加事务{I1,I3}
 
-   [![image-20220330174940014](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191733195.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174940014.png)
+   [![image-20220330174940014](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191733195.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330174940014.png)
 
    - 添加事务{I2,I1,I3,I5}
 
-   [![image-20220331102218282](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191735723.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220331102218282.png)
+   [![image-20220331102218282](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191735723.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220331102218282.png)
 
    - 添加事务{I2,I1,I3}
 
-   [![image-20220330184127139](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191734299.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184127139.png)
+   [![image-20220330184127139](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191734299.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184127139.png)
 
 3. 在建树的过程中应该维护一个项头表，使每个项目通过节点链指向它在树中的位置
 
-   [![image-20220330184405557](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191734993.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184405557.png)
+   [![image-20220330184405557](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191734993.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184405557.png)
 
 ### STEP4 挖掘频繁模式
 
@@ -110,15 +110,15 @@
 
 - I5:
 
-[![image-20220330184816900](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191734446.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184816900.png)
+[![image-20220330184816900](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191734446.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184816900.png)
 
 - I4:
-  [![image-20220331102531778](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191734053.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220331102531778.png)
+  [![image-20220331102531778](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191734053.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220331102531778.png)
 - I3:
-  [![image-20220330184849322](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191734795.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184849322.png)
+  [![image-20220330184849322](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191734795.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184849322.png)
 - I1:
 
-[![image-20220330184855609](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191734996.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184855609.png)
+[![image-20220330184855609](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191734996.png)](http://liuwenlong.space/2022/03/30/Machine-Learning/FP-Growth/image-20220330184855609.png)
 
 1. 条件FP树与节点组合得到频繁模式
 
@@ -131,7 +131,7 @@
 
 在程序中，递归着搜索短模式，然后连接后缀，以I3为例：
 
-![image-20220330193522820](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191734060.png)
+![image-20220330193522820](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191734060.png)
 
 试问像第二条路径的条件FP树是否会存在I1？
 

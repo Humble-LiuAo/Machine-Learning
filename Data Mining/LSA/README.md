@@ -32,21 +32,21 @@ LSA 使用词-文档矩阵来描述一个词语是否在一篇文档中。词-�
 
 假设X是词-文档矩阵，其元素（i,j）代表词语i在文档j中的出现次数，则X矩阵看上去是如下的样子：
 
-![image-20220419124011305](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191240431.png)
+![image-20220419124011305](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191240431.png)
 
 可以看到，每一行代表一个词的向量，该向量描述了该词和所有文档的关系。
 
-![image-20220419124035871](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191240905.png)
+![image-20220419124035871](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191240905.png)
 
 相似的，一列代表一个文档向量，该向量描述了该文档与所有词的关系。
 
-![image-20220419124055085](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191240123.png)
+![image-20220419124055085](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191240123.png)
 
-![image-20220419124203506](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191242577.png)
+![image-20220419124203506](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191242577.png)
 
-![image-20220419124219768](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191242830.png)
+![image-20220419124219768](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191242830.png)
 
-![image-20220419124252803](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191242875.png)
+![image-20220419124252803](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191242875.png)
 
 **应用**
 

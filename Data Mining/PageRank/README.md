@@ -4,7 +4,7 @@
 
 我假设一共有 4 个网页 A、B、C、D。它们之间的链接信息如图所示：
 
-<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191714073.png" alt="1" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191714073.png" alt="1" style="zoom:50%;" />
 
 这里有两个概念你需要了解一下。
 
@@ -12,7 +12,7 @@
 
 简单来说，一个网页的影响力 = 所有入链集合的页面的加权影响力之和，用公式表示为：
 
-<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191714048.png" alt="image-20220419171448979" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191714048.png" alt="image-20220419171448979" style="zoom:50%;" />
 
 u 为待评估的页面， B_{u} 为页面 u 的入链集合。针对入链集合中的任意页面 v，它能给 u 带来的影响力是其自身的影响力 PR(v) 除以 v 页面的出链数量，即页面 v 把影响力 PR(v) 平均分配给了它的出链，这样统计所有能给 u 带来链接的页面 v，得到的总和就是网页 u 的影响力，即为 PR(u)。
 
@@ -24,15 +24,15 @@ B 有两个出链，链接到了 A 和 D 上，跳转概率为 1/2。
 
 这样，我们可以得到 A、B、C、D 这四个网页的转移矩阵 M：
 
-![image-20220419171510179](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191715218.png)
+![image-20220419171510179](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191715218.png)
 
 我们假设 A、B、C、D 四个页面的初始影响力都是相同的，即：
 
-![image-20220419171525548](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191715583.png)
+![image-20220419171525548](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191715583.png)
 
 当进行第一次转移之后，各页面的影响力 w_{1} 变为：
 
-![image-20220419171609099](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191716137.png)
+![image-20220419171609099](https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191716137.png)
 
 然后我们再用转移矩阵乘以 w_{1} 得到 w_{2} 结果，直到第 n 次迭代后 w_{n} 影响力不再发生变化，可以收敛到 (0.3333，0.2222，0.2222，0.2222），也就是对应着 A、B、C、D 四个页面最终平衡状态下的影响力。
 
@@ -42,11 +42,11 @@ B 有两个出链，链接到了 A 和 D 上，跳转概率为 1/2。
 
 1. 等级泄露（Rank Leak）：如果一个网页没有出链，就像是一个黑洞一样，吸收了其他网页的影响力而不释放，最终会导致其他网页的 PR 值为 0。
 
-<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191717330.png" alt="image-20220419171740268" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191717330.png" alt="image-20220419171740268" style="zoom:50%;" />
 
 2. 等级沉没（Rank Sink）：如果一个网页只有出链，没有入链（如下图所示），计算的过程迭代下来，会导致这个网页的 PR 值为 0（也就是不存在公式中的 V）。
 
-   <img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191719876.png" alt="image-20220419171927819" style="zoom: 50%;" />
+   <img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191719876.png" alt="image-20220419171927819" style="zoom: 50%;" />
 
 针对等级泄露和等级沉没的情况，我们需要灵活处理。
 
@@ -60,7 +60,7 @@ B 有两个出链，链接到了 A 和 D 上，跳转概率为 1/2。
 
 所以他定义了阻尼因子 d，这个因子代表了用户按照跳转链接来上网的概率，通常可以取一个固定值 0.85，而 1-d=0.15 则代表了用户不是通过跳转链接的方式来访问网页的，比如直接输入网址。
 
-<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/Typora_img/202204191720259.png" alt="image-20220419172048218" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Humble-LiuAo/Study-notes/main/img/202204191720259.png" alt="image-20220419172048218" style="zoom:50%;" />
 
 其中 N 为网页总数，这样我们又可以重新迭代网页的权重计算了，因为加入了阻尼因子 d，一定程度上解决了等级泄露和等级沉没的问题。
 
